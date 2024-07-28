@@ -24,12 +24,12 @@
       </ul>
     </nav>
   </header>
-  <main>
-    <div class="row">
+  <main class="main">
+    <div class="row main-row">
       <div class="col">
         <img src="./assets/planet-mercury.svg" alt="planet Mercury as digital illustration">
       </div>
-      <div class="col">
+      <div class="col col-main-info">
         <h1>Mercury</h1>
 
         <!-- Overview Content Start -->
@@ -39,11 +39,16 @@
         to the Sun. Its orbit around the Sun takes 87.97 Earth days, the
         shortest of all the Sun's planets. Mercury is one of four terrestrial
         planets in the Solar System, and is a rocky body like Earth.
-      </p>
-      <p>
+        </p>
+        <p>
         Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet) -->
-      </p>
-      <!-- Overview Content End -->
+        </p>
+        <!-- Overview Content End -->
+      <!-- <div class="btn--info-select-wrapper"> -->
+        <button class="btn--info-select">01 Overview</button>
+        <button class="btn--info-select">02 Internal Structure</button>
+        <button class="btn--info-select">03 Surface Geology</button>
+      <!-- </div> -->
 
       </div>
     </div>
@@ -71,21 +76,27 @@
       <!-- Surface Geology Content End -->
     </div>
 
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
-
-  Rotation Time
-  58.6 Days
-
-  Revolution Time
-  87.97 Days
-
-  Radius
-  2,439.7 KM
-
-  Average Temp.
-  430°c
+    <!-- <button class="btn--info-select">01 Overview</button>
+    <button class="btn--info-select">02 Internal Structure</button>
+    <button class="btn--info-select">03 Surface Geology</button> -->
+    <div class="info-box-wrapper row">
+      <div class="info-box">
+        <h3>Rotation Time</h3>
+        <p>58.6 Days</p>
+      </div>
+      <div class="info-box">
+        <h3>Revolution Time</h3>
+        <p>87.97 Days</p>
+      </div>
+      <div class="info-box">
+        <h3>Radius</h3>
+        <p>2,439.7 KM</p>
+      </div>
+      <div class="info-box">
+        <h3>Average Temp.</h3>
+        <p>430°c</p>
+      </div>
+    </div>
   </main>
 </body>
 </html>
