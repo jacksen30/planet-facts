@@ -91,6 +91,47 @@ body {
   display: flex;
   flex-direction: column;
   width: 100vw;
+  font-family: "League Spartan", sans-serif;
+  /* background-image: url("./assets/background-stars.svg"); */
+  background-color: #070724;
+  color: #FFF;
+}
+
+h1 {
+  font-family: "Antonio", sans-serif;
+  font-size: 80px;
+  line-height: 103px;
+}
+
+h2 {
+  font-family: "Antonio", sans-serif;
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: 1.5;
+}
+
+h3 {
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: 2.6;
+}
+
+h4 {
+  font-size: 11px;
+  line-height: 25px;
+  letter-spacing: 1;
+}
+
+p {
+  font-size: 14px;
+  line-height: 25px;
+}
+
+
+
+.main {
+  background-image: url("./assets/background-stars.svg");
+  background-repeat: repeat;
 }
 
 .row {
@@ -99,11 +140,14 @@ body {
 }
 
 .col {
+  display: flex;
+  flex-direction: column;
   width: 35%;
 }
 
 .col-main-info {
   width: 300px; /* Update to not be fixed width later */
+  gap: 10px;
 }
 
 header nav {
@@ -143,11 +187,30 @@ header nav ul li a {
   gap: 100px;
 }
 
-.btn--info-select {
-  display: block;
-  border: 1px solid #838391;
+.main-row {
+  border: 3px solid green;
+  justify-content: flex-end;
+}
 
+.main-row .col {
+  border: 3px solid red;
+}
+
+.btn--info-select {
+  display: flex;
+  border: 1px solid #838391;
   width: 100%;
+  background-color: #070724;
+  color: #FFF;
+  padding: 5px 15px;
+
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: 2.6;
+}
+
+.btn--info-select span {
+  margin-right: 20px;
 }
 
 .info-box-wrapper {
@@ -159,9 +222,18 @@ header nav ul li a {
 .info-box {
   border: 1px solid #838391;
   width: 20%;
-  height: 75px; /* Update to not be fixed height later */
+  padding: 10px 15px;
+  /* Update to not be fixed height later */
 }
 
 .other-states-hide {
   display: none;
 }
+
+
+
+/* TURN BORDER LINES FOR TESTING OFF - DELETE WHEN LAYOUT COMPLETED */
+
+/* .main, .main-row, .main-row .col {
+  border: none;
+} */
